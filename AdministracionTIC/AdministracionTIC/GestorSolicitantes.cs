@@ -1,0 +1,341 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AdministracionTIC
+{
+    class GestorSolicitantes
+    {
+        private VistaSolicitante vistaSolicitantes;
+
+        private RepositorioSolicitante repositorioSolicitante;
+
+        private const int CANTIDAD_ATRIBUTOS = 9;
+
+        public GestorSolicitantes(VistaSolicitante vistaSolicitante)
+        {
+            this.vistaSolicitantes = vistaSolicitante;
+
+            this.repositorioSolicitante = new RepositorioSolicitante();
+        }
+
+        public void agregarNuevoSolicitante()
+        {
+            String codigoString = vistaSolicitantes.GetCodigoTextBox().Text;
+            String nombre = vistaSolicitantes.GetNombreTextBox().Text;
+            String apellido = vistaSolicitantes.GetApellidoTextBox().Text;
+            String dni = vistaSolicitantes.GetDniTextBox().Text;
+            String cargo = vistaSolicitantes.GetCargoTextBox().Text;
+            String telefono = vistaSolicitantes.GetTelefonoTextBox().Text;
+            String mail = vistaSolicitantes.GetMailTextBox().Text;
+            String universidad = vistaSolicitantes.GetUniversidadTextBox().Text;
+            String estado = vistaSolicitantes.GetEstadoTextBox().Text;
+
+            if (CamposValidos(codigoString, nombre, apellido, dni, cargo, telefono, mail, universidad, estado))
+            {
+                int codigo = int.Parse(codigoString);
+
+                if (!CodigoExiste(codigo))
+                {
+                    Solicitante solicitante = new Solicitante(codigo, nombre, apellido, dni, cargo, telefono, mail, universidad, estado);
+
+                    this.repositorioSolicitante.agregarSolicitante(solicitante);
+
+                    vistaSolicitantes.MostrarRegistro(ObtenerAtributos(solicitante));
+
+                    vistaSolicitantes.MostrarMensaje("EL RECURSO FUÉ GUARDADO CORRECTAMENTE");
+                }
+                else
+                {
+                    vistaSolicitantes.MostrarMensaje("EL CÓDIGO INGRESADO YA EXISTE, POR FAVOR INGRESE OTRO CÓDIGO");
+                }
+            }
+
+
+
+        }
+
+        public void EliminarSolicitante()
+        {
+            String codigoString = vistaSolicitantes.GetCodigoTextBox().Text;
+
+            if(CodigoValido(codigoString))
+            {
+                int codigo = int.Parse(codigoString);
+                try
+                {
+                    repositorioSolicitante.EliminarSolicitante(codigo);
+
+                    vistaSolicitantes.EliminarRegistro(codigoString);
+                }
+                catch(Exception)
+                {
+                    throw new Exception("ERROR AL ELIMINAR RECURSO");
+                }
+            }
+        }
+
+        public void GuardarCambiosSolicitante()
+        {
+            String codigoString = vistaSolicitantes.GetCodigoTextBox().Text;
+            String nombre = vistaSolicitantes.GetNombreTextBox().Text;
+            String apellido = vistaSolicitantes.GetApellidoTextBox().Text;
+            String dni = vistaSolicitantes.GetDniTextBox().Text;
+            String cargo = vistaSolicitantes.GetCargoTextBox().Text;
+            String telefono = vistaSolicitantes.GetTelefonoTextBox().Text;
+            String mail = vistaSolicitantes.GetMailTextBox().Text;
+            String universidad = vistaSolicitantes.GetUniversidadTextBox().Text;
+            String estado = vistaSolicitantes.GetEstadoTextBox().Text;
+
+            if(CamposValidos(codigoString, nombre, apellido,dni, cargo, telefono, mail, universidad, estado) )
+            {
+                int codigo = int.Parse(codigoString);
+
+                if(CodigoExiste(codigo))
+                {
+                    Solicitante solicitante = new Solicitante(codigo, nombre, apellido, dni, cargo, telefono, mail, universidad, estado);
+
+                    this.repositorioSolicitante.EditarSolicitante(solicitante);
+
+                    vistaSolicitantes.EditarRegistro(ObtenerAtributos(solicitante));
+
+                    vistaSolicitantes.MostrarMensaje("LOS CAMBIOS FUERON GUARDADOS CORECTAMENTE");
+                }
+                else
+                {
+                    vistaSolicitantes.MostrarMensaje("EL CÓDIGO INGRESADO NO EXISTE, POR FAVOR INGRESE OTRO CÓDIGO");
+
+                }
+            }
+        }
+
+        private String[] ObtenerAtributos(Solicitante solicitante)
+        {
+            String[] atributos = new String[CANTIDAD_ATRIBUTOS];
+
+            atributos[0] = solicitante.Codigo.ToString();
+            atributos[1] = solicitante.Nombre;
+            atributos[2] = solicitante.Apellido;
+            atributos[3] = solicitante.Dni;
+            atributos[4] = solicitante.Cargo;
+            atributos[5] = solicitante.Telefono;
+            atributos[6] = solicitante.Mail;
+            atributos[7] = solicitante.Universidad;
+            atributos[8] = solicitante.Estado;
+
+            return atributos;
+
+
+        }
+
+        /*-------------------------------------------------------------
+        * 
+        * -----------------VALIDACIONES Y CONVERSIONES-----------------
+        * 
+        *-------------------------------------------------------------*/
+
+        private Boolean CamposValidos(String codigoString, String nombre, String apellido, String dni,
+            String cargo, String telefono, String mail, String universidad, String estado)
+        {
+            Boolean camposValidos = true;
+
+            if (!CodigoValido(codigoString)
+                || !NombreValido(nombre)
+                || !ApeliidoValido(apellido)
+                || !DniValido(dni)
+                || !CargoValido(cargo)
+                || !TelefonoValido(telefono)
+                || !MailValido(mail)
+                || !UniversidadValido(universidad)
+                || !EstadoValido(estado))
+                {
+                    camposValidos = false;
+                }
+            return camposValidos;
+        }
+
+        private Boolean CodigoValido(String codigoString)
+        {
+            Boolean codigoValido = true;
+
+            int codigo;
+
+            try
+            {
+                if (!CampoVacio(codigoString))
+                {
+                    codigo = int.Parse(codigoString);
+
+                    if (codigo < 0)
+                    {
+                        codigoValido = false;
+                        vistaSolicitantes.MostrarMensaje("EL CODIGO DEBE SER UN NÚMERO POSITIVO");
+                    }
+                }
+                else
+                {
+                    codigoValido = false;
+                    vistaSolicitantes.MostrarMensaje("CAMPO CÓDIGO VACÍO, POR FAVOR INGRESE UN CÓDIGO");
+                }
+            }
+            catch(Exception)
+            {
+                throw new Exception("EL CÓDIGO INGRESADO ES INVÁLIDO");
+            }
+
+            return codigoValido;
+
+        }
+
+
+
+        private Boolean CodigoExiste(int codigo)
+        {
+            Boolean existe = false;
+
+            foreach (Solicitante sol in repositorioSolicitante.Solicitantes)
+            {
+                if (codigo == sol.Codigo)
+                {
+                    existe = true;
+                }
+            }
+
+            return existe;
+        }
+
+        private Boolean NombreValido(String nombre)
+        {
+            Boolean nombreValido = true;
+
+            if (CampoVacio(nombre))
+            {
+                nombreValido = false;
+                vistaSolicitantes.MostrarMensaje("EL CAMPO NOMBRE ESTA VACIO, POR FAVOR INGRESE UN NOMBRE ");
+            }
+
+            return nombreValido;
+        }
+
+
+
+        private Boolean ApeliidoValido(String apellido)
+        {
+            Boolean apellidoValido = true;
+
+            if (CampoVacio(apellido))
+            {
+                apellidoValido = false;
+                vistaSolicitantes.MostrarMensaje("EL CAMPO APELLIDO ESTA VACIO, POR FAVOR INGRESE UN APELLIDO ");
+            }
+
+            return apellidoValido;
+        }
+
+        private Boolean DniValido(String dni)
+        {
+            Boolean dniValido = true;
+
+            if (CampoVacio(dni))
+            {
+                dniValido = false;
+                vistaSolicitantes.MostrarMensaje("EL CAMPO DNI ESTA VACIO, POR FAVOR INGRESE UN DNI");
+            }
+
+            return dniValido;
+        }
+
+        private Boolean CargoValido(String cargo)
+        {
+            Boolean cargoValido = true;
+
+            if (CampoVacio(cargo))
+            {
+                cargoValido = false;
+                vistaSolicitantes.MostrarMensaje("EL CAMPO CARGO ESTA VACIO, POR FAVOR INGRESE UN CARGO ");
+            }
+
+            return cargoValido;
+        }
+
+        private Boolean TelefonoValido(String telefono)
+        {
+            Boolean telefonoValido = true;
+
+            if (CampoVacio(telefono))
+            {
+                telefonoValido = false;
+                vistaSolicitantes.MostrarMensaje("EL CAMPO TELEFONO ESTA VACIO, POR FAVOR INGRESE UN TELEFONO ");
+            }
+
+            return telefonoValido;
+        }
+
+        private Boolean MailValido(String mail)
+        {
+            Boolean mailValido = true;
+
+            if (CampoVacio(mail))
+            {
+                mailValido = false;
+                vistaSolicitantes.MostrarMensaje("EL CAMPO MAIL ESTA VACIO, POR FAVOR INGRESE UN MAIL ");
+            }
+
+            return mailValido;
+        }
+        private Boolean UniversidadValido(String universidad)
+        {
+            Boolean universidadValido = true;
+
+            if (CampoVacio(universidad))
+            {
+                universidadValido = false;
+                vistaSolicitantes.MostrarMensaje("EL CAMPO UNIVERSIDAD ESTA VACIO, POR FAVOR INGRESE UNA UNIVERSIDAD ");
+            }
+
+            return universidadValido;
+        }
+
+        private Boolean EstadoValido(String estado)
+        {
+            Boolean estadoValido = true;
+
+            if (CampoVacio(estado))
+            {
+                estadoValido = false;
+                vistaSolicitantes.MostrarMensaje("EL CAMPO ESTADO ESTA VACIO, POR FAVOR INGRESE UN ESTADO ");
+            }
+
+            return estadoValido;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        private Boolean CampoVacio(String campo)
+        {
+            Boolean campoVacio = false;
+
+            if(campo.Length == 0)
+            {
+                campoVacio = true;
+            }
+            return campoVacio;
+        }
+
+
+
+
+
+    }
+}

@@ -1,0 +1,38 @@
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.VistaPrincipal.resources
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.Properties.Resources.resources
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.VistaRecursos.resources
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\bin\Debug\AdministracionTIC.exe.config
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\bin\Debug\AdministracionTIC.exe
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\bin\Debug\AdministracionTIC.pdb
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.exe
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.pdb
+C:\Users\Alumno\Downloads\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.csprojAssemblyReference.cache
+C:\Users\Alumno\Downloads\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.VistaPrincipal.resources
+C:\Users\Alumno\Downloads\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.Form2.resources
+C:\Users\Alumno\Downloads\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.Properties.Resources.resources
+C:\Users\Alumno\Downloads\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.VistaPrestamo.resources
+C:\Users\Alumno\Downloads\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.VistaRecursos.resources
+C:\Users\Alumno\Downloads\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.csproj.GenerateResource.cache
+C:\Users\Alumno\Downloads\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Downloads\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.exe
+C:\Users\Alumno\Downloads\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.pdb
+C:\Users\Alumno\Downloads\AdministracionTIC\AdministracionTIC\AdministracionTIC\bin\Debug\AdministracionTIC.exe.config
+C:\Users\Alumno\Downloads\AdministracionTIC\AdministracionTIC\AdministracionTIC\bin\Debug\AdministracionTIC.exe
+C:\Users\Alumno\Downloads\AdministracionTIC\AdministracionTIC\AdministracionTIC\bin\Debug\AdministracionTIC.pdb
+D:\Datos\Downloads\FACULTAD\3\diseño de sistemas\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.csprojAssemblyReference.cache
+D:\Datos\Downloads\FACULTAD\3\diseño de sistemas\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.VistaPrincipal.resources
+D:\Datos\Downloads\FACULTAD\3\diseño de sistemas\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.Form2.resources
+D:\Datos\Downloads\FACULTAD\3\diseño de sistemas\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.Properties.Resources.resources
+D:\Datos\Downloads\FACULTAD\3\diseño de sistemas\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.VistaPrestamo.resources
+D:\Datos\Downloads\FACULTAD\3\diseño de sistemas\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.VistaRecursos.resources
+D:\Datos\Downloads\FACULTAD\3\diseño de sistemas\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.VistaSolicitante.resources
+D:\Datos\Downloads\FACULTAD\3\diseño de sistemas\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.csproj.GenerateResource.cache
+D:\Datos\Downloads\FACULTAD\3\diseño de sistemas\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.csproj.CoreCompileInputs.cache
+D:\Datos\Downloads\FACULTAD\3\diseño de sistemas\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.exe
+D:\Datos\Downloads\FACULTAD\3\diseño de sistemas\AdministracionTIC\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.pdb
+D:\Datos\Downloads\FACULTAD\3\diseño de sistemas\AdministracionTIC\AdministracionTIC\AdministracionTIC\bin\Debug\AdministracionTIC.exe.config
+D:\Datos\Downloads\FACULTAD\3\diseño de sistemas\AdministracionTIC\AdministracionTIC\AdministracionTIC\bin\Debug\AdministracionTIC.exe
+D:\Datos\Downloads\FACULTAD\3\diseño de sistemas\AdministracionTIC\AdministracionTIC\AdministracionTIC\bin\Debug\AdministracionTIC.pdb

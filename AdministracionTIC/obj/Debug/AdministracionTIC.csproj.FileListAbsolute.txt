@@ -1,0 +1,16 @@
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.VistaPrincipal.resources
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.Properties.Resources.resources
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.VistaRecursos.resources
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\bin\Debug\AdministracionTIC.exe.config
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\bin\Debug\AdministracionTIC.exe
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\bin\Debug\AdministracionTIC.pdb
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.exe
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.pdb
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.VistaPrestamo.resources
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.VistaRecursoSeleccionado.resources
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.VistaSeleccionSolicitante.resources
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.VistaSolicitante.resources
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC\obj\Debug\AdministracionTIC.VistaPrestamosPendientes.resources
