@@ -1,0 +1,11 @@
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC.Test\bin\Debug\AdministracionTIC.Test.dll
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC.Test\bin\Debug\AdministracionTIC.Test.pdb
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC.Test\bin\Debug\AdministracionTIC.exe
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC.Test\bin\Debug\AdministracionTIC.pdb
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC.Test\bin\Debug\AdministracionTIC.exe.config
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC.Test\obj\Debug\AdministracionTIC.Test.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC.Test\obj\Debug\AdministracionTIC.Test.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC.Test\obj\Debug\AdministracionTIC.Test.csproj.CopyComplete
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC.Test\obj\Debug\AdministracionTIC.Test.dll
+C:\Users\Usuario\Desktop\FACULTAD\3 Tercer Año\Diseño de Sistemas\Trabajos Practicos\DSI-TPI-MansillaJP-Bula\AdministracionTIC\AdministracionTIC.Test\obj\Debug\AdministracionTIC.Test.pdb
