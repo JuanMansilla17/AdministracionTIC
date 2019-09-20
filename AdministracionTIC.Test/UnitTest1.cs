@@ -35,7 +35,7 @@ namespace AdministracionTIC.Test
             //VistaPrestamo vistaPrestamo = new VistaPrestamo();
             GestorPrestamo gestorPrestamo = new GestorPrestamo();
 
-            DateTime fecha = DateTime.Now.AddDays(32);
+            DateTime fecha = DateTime.Now.AddDays(30);
 
             //Act
             Boolean fechaValida = gestorPrestamo.FechaValida(fecha);

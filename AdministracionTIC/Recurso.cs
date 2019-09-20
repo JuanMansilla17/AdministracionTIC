@@ -17,6 +17,7 @@ namespace AdministracionTIC
         private Boolean averiado; //false: disponible; true: averiado
         private String observaciones;
 
+        private const int CANTIDAD_ATRIBUTOS_RECURSO = 8;
 
         public Recurso(int codigo,
             String descripcion,
@@ -157,6 +158,46 @@ namespace AdministracionTIC
         public override String ToString() 
         {
             return this.codigo.ToString() + "||" + this.descripcion + "||" + this.marca + "||" + this.modelo;
+        }
+
+        public String[] Atributos
+        {
+            set { }
+            get
+            {
+                String[] atributos = new String[CANTIDAD_ATRIBUTOS_RECURSO];
+
+                atributos[0] = this.codigo.ToString();
+                atributos[1] = this.descripcion;
+                atributos[2] = this.fecha.ToString("dd/MM/yyyy");
+
+                if (this.averiado)
+                {
+                    atributos[3] = "Averiado";
+                    atributos[4] = this.observaciones;
+                }
+                else
+                {
+                    atributos[3] = "Disponible";
+                    atributos[4] = "";
+                }
+
+
+                if (this.esAula)
+                {
+                    atributos[5] = "";
+                    atributos[6] = "";
+                    atributos[7] = "Aula";
+                }
+                else
+                {
+                    atributos[5] = this.marca;
+                    atributos[6] = this.modelo;
+                    atributos[7] = "Movil";
+                }
+
+                return atributos;
+            }
         }
     }
 }

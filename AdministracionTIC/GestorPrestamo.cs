@@ -69,7 +69,7 @@ namespace AdministracionTIC
                         }
                         if (elRecursoEstaDisponible)
                         {
-                            vistaRecursoSeleccionado.MostrarRegistro(ObtenerAtributos(recurso));
+                            vistaRecursoSeleccionado.MostrarRegistro(recurso.Atributos);
 
                             vistaRecursoSeleccionado.Show();
                         }
@@ -84,9 +84,9 @@ namespace AdministracionTIC
 
             foreach (Solicitante solicitante in listaSolicitantes)
             {
-                if (solicitante.Estado.Equals("habilitado"))
+                if (solicitante.Habilitado)
                 {
-                    vistaSeleccionSolicitante.MostrarRegistro(ObtenerAtributos(solicitante));
+                    vistaSeleccionSolicitante.MostrarRegistro(solicitante.Atributos);
                 }
             }
 
@@ -126,7 +126,7 @@ namespace AdministracionTIC
 
                 this.vistaPrincipal.RepositorioPrestamoPropiedad = this.repositorioPrestamo;
 
-                vistaPrestamo.MostrarRegistro(ObtenerAtributos(prestamo));
+                vistaPrestamo.MostrarRegistro(prestamo.Atributos);
 
                 vistaPrestamo.MostrarMensaje("EL PRÉSTAMO FUÉ GUARDADO CORRECTAMENTE");
             }
@@ -143,7 +143,7 @@ namespace AdministracionTIC
                 Prestamo prestamo = GetPrestamo(codigo);
                 prestamo.Estado = "prestado";
                 this.repositorioPrestamo.editarPrestamo(prestamo);
-                this.vistaPrestamo.EditarRegistro(ObtenerAtributos(prestamo));
+                this.vistaPrestamo.EditarRegistro(prestamo.Atributos);
                 this.vistaPrestamosPendientes.EliminarRegistro(codigoString);
                 this.vistaPrestamosPendientes.MostrarMensaje("SE CONCRETÓ EL PRÉSTAMO CORRECTAMENTE");
             }
@@ -164,7 +164,7 @@ namespace AdministracionTIC
             {
                 if (prestamo.Estado.Equals("pendiente"))
                 {
-                    this.vistaPrestamosPendientes.MostrarRegistro(ObtenerAtributos(prestamo));
+                    this.vistaPrestamosPendientes.MostrarRegistro(prestamo.Atributos);
                     hayPrestamosPendientes = true;
                 }
             }
@@ -471,74 +471,6 @@ namespace AdministracionTIC
             return codigo;
         }
 
-        public String[] ObtenerAtributos(Prestamo prestamo)
-        {
-            String[] atributos = new String[CANTIDAD_ATRIBUTOS_PRESTAMO];
 
-            atributos[0] = prestamo.Codigo.ToString();
-            atributos[1] = prestamo.Recurso.ToString();
-            atributos[2] = prestamo.Solicitante.ToString();
-            atributos[3] = prestamo.FechaHoraEmision.ToString();
-            atributos[4] = prestamo.FechaHoraEntrega.ToString();
-            atributos[5] = prestamo.FechaHoraDevolucion.ToString();
-            atributos[6] = prestamo.Estado;
-            atributos[7] = prestamo.Observaciones;
-
-            return atributos;
-        }
-
-        public String[] ObtenerAtributos(Recurso recurso)
-        {
-            String[] atributos = new String[CANTIDAD_ATRIBUTOS_RECURSO];
-
-            atributos[0] = recurso.Codigo.ToString();
-            atributos[1] = recurso.Descripcion;
-            atributos[2] = recurso.Fecha.ToString("dd/MM/yyyy");
-
-            if (recurso.Averiado)
-            {
-                atributos[3] = "Averiado";
-                atributos[4] = recurso.Observaciones;
-            }
-            else
-            {
-                atributos[3] = "Disponible";
-                atributos[4] = "";
-            }
-
-
-            if (recurso.EsAula)
-            {
-                atributos[5] = "";
-                atributos[6] = "";
-                atributos[7] = "Aula";
-            }
-            else
-            {
-                atributos[5] = recurso.Marca;
-                atributos[6] = recurso.Modelo;
-                atributos[7] = "Movil";
-            }
-
-            return atributos;
-        }
-
-        public String[] ObtenerAtributos(Solicitante solicitante)
-        {
-            String[] atributos = new String[CANTIDAD_ATRIBUTOS_SOLICITANTE];
-
-            atributos[0] = solicitante.Codigo.ToString();
-            atributos[1] = solicitante.Nombre;
-            atributos[2] = solicitante.Apellido;
-            atributos[3] = solicitante.Dni;
-            atributos[4] = solicitante.Cargo;
-            atributos[5] = solicitante.Telefono;
-            atributos[6] = solicitante.Mail;
-            atributos[7] = solicitante.Universidad;
-            atributos[8] = solicitante.Estado;
-
-            return atributos;
-        }
     }
-
 }

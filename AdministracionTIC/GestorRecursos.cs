@@ -43,7 +43,7 @@ namespace AdministracionTIC
 
                         this.vistaPrincipal.RepositorioRecursoPropiedad = this.repositorioRecursos;
 
-                        vistaRecursos.MostrarRegistro(ObtenerAtributos(recurso));
+                        vistaRecursos.MostrarRegistro(recurso.Atributos);
 
                         vistaRecursos.MostrarMensaje("EL RECURSO FUÉ GUARDADO CORRECTAMENTE");
                     }
@@ -70,7 +70,7 @@ namespace AdministracionTIC
 
                         this.vistaPrincipal.RepositorioRecursoPropiedad = this.repositorioRecursos;
 
-                        vistaRecursos.MostrarRegistro(ObtenerAtributos(recurso));
+                        vistaRecursos.MostrarRegistro(recurso.Atributos);
 
                         vistaRecursos.MostrarMensaje("EL RECURSO FUÉ GUARDADO CORRECTAMENTE");
                     }
@@ -126,7 +126,7 @@ namespace AdministracionTIC
 
                         this.vistaPrincipal.RepositorioRecursoPropiedad = this.repositorioRecursos;
 
-                        vistaRecursos.EditarRegistro(ObtenerAtributos(recurso));
+                        vistaRecursos.EditarRegistro(recurso.Atributos);
 
                         vistaRecursos.MostrarMensaje("LOS CAMBIOS FUERON GUARDADOS CORECTAMENTE");
                     }
@@ -153,7 +153,7 @@ namespace AdministracionTIC
 
                         this.vistaPrincipal.RepositorioRecursoPropiedad = this.repositorioRecursos;
 
-                        vistaRecursos.EditarRegistro(ObtenerAtributos(recurso));
+                        vistaRecursos.EditarRegistro(recurso.Atributos);
 
                         vistaRecursos.MostrarMensaje("LOS CAMBIOS FUERON GUARDADOS CORECTAMENTE");
                     }
@@ -165,7 +165,7 @@ namespace AdministracionTIC
             }
         }
 
-        public String[] ObtenerAtributos(Recurso recurso)
+        /*public String[] ObtenerAtributos(Recurso recurso)
         {
             String[] atributos = new String[CANTIDAD_ATRIBUTOS];
 
@@ -199,7 +199,7 @@ namespace AdministracionTIC
             }
 
             return atributos;
-        }
+        }*/
 
         /*-------------------------------------------------------------
          * 

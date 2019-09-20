@@ -18,6 +18,8 @@ namespace AdministracionTIC
         private String estado;
         private String observaciones;
 
+        private const int CANTIDAD_ATRIBUTOS_PRESTAMO = 8;
+
         public Prestamo (int codigo,
             Recurso recurso, 
             Solicitante solicitante,
@@ -38,6 +40,26 @@ namespace AdministracionTIC
         }
 
         public Prestamo() { }
+
+        public String[] Atributos
+        {
+            set { }
+            get
+            {
+                String[] atributos = new String[CANTIDAD_ATRIBUTOS_PRESTAMO];
+
+                atributos[0] = this.codigo.ToString();
+                atributos[1] = this.recurso.ToString();
+                atributos[2] = this.solicitante.ToString();
+                atributos[3] = this.fechaHoraEmision.ToString();
+                atributos[4] = this.fechaHoraEntrega.ToString();
+                atributos[5] = this.fechaHoraDevolucion.ToString();
+                atributos[6] = this.estado;
+                atributos[7] = this.observaciones;
+
+                return atributos;
+            }
+        }
 
         public int  Codigo
         {

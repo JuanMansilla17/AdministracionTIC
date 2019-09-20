@@ -16,7 +16,9 @@ namespace AdministracionTIC
         private String telefono;
         private String mail;
         private String universidad;
-        private String estado;
+        private Boolean habilitado;
+
+        private const int CANTIDAD_ATRIBUTOS_SOLICITANTE = 9;
 
         public Solicitante (int codigo,
             String nombre, 
@@ -35,7 +37,7 @@ namespace AdministracionTIC
             this.telefono = telefono;
             this.mail = mail;
             this.universidad = universidad;
-            this.estado = "habilitado";
+            this.habilitado = true;
         }
 
         public Solicitante() { }
@@ -136,21 +138,44 @@ namespace AdministracionTIC
             }
         }
 
-        public String Estado
+        public Boolean Habilitado
         {
             set
             {
-                this.estado = value;
+                this.habilitado = value;
             }
             get
             {
-                return this.estado;
+                return this.habilitado;
             }
         }
 
         public override string ToString()
         {
             return this.codigo.ToString() + "||" + this.nombre + "||" + this.apellido + "||" + this.dni;
+        }
+
+        public String[] Atributos
+        {
+            set { }
+            get
+            {
+                String[] atributos = new String[CANTIDAD_ATRIBUTOS_SOLICITANTE];
+
+                atributos[0] = this.codigo.ToString();
+                atributos[1] = this.nombre;
+                atributos[2] = this.apellido;
+                atributos[3] = this.dni;
+                atributos[4] = this.cargo;
+                atributos[5] = this.telefono;
+                atributos[6] = this.mail;
+                atributos[7] = this.universidad;
+
+                if(this.habilitado) atributos[8] = "habilitado";
+                else atributos[8] = "deshabilitado";
+
+                return atributos;
+            }
         }
     }
 }

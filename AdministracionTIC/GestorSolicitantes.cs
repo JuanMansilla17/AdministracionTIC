@@ -46,7 +46,7 @@ namespace AdministracionTIC
 
                     this.vistaPrincipal.RepositorioSolicitantePropiedad = this.repositorioSolicitante;
 
-                    vistaSolicitantes.MostrarRegistro(ObtenerAtributos(solicitante));
+                    vistaSolicitantes.MostrarRegistro(solicitante.Atributos);
 
                     vistaSolicitantes.MostrarMensaje("EL SOLICITANTE FUÉ GUARDADO CORRECTAMENTE");
                 }
@@ -105,7 +105,7 @@ namespace AdministracionTIC
 
                     this.vistaPrincipal.RepositorioSolicitantePropiedad = this.repositorioSolicitante;
 
-                    vistaSolicitantes.EditarRegistro(ObtenerAtributos(solicitante));
+                    vistaSolicitantes.EditarRegistro(solicitante.Atributos);
 
                     vistaSolicitantes.MostrarMensaje("LOS CAMBIOS FUERON GUARDADOS CORECTAMENTE");
                 }
@@ -116,7 +116,7 @@ namespace AdministracionTIC
             }
         }
 
-        private String[] ObtenerAtributos(Solicitante solicitante)
+        /*private String[] ObtenerAtributos(Solicitante solicitante)
         {
             String[] atributos = new String[CANTIDAD_ATRIBUTOS];
 
@@ -131,7 +131,7 @@ namespace AdministracionTIC
             atributos[8] = solicitante.Estado;
 
             return atributos;
-        }
+        }*/
 
         /*-------------------------------------------------------------
         * 
